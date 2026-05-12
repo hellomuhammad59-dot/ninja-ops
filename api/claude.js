@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   try {
     const { userMsg, maxTokens } = req.body;
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("/api/claude", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
